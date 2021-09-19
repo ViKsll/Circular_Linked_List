@@ -1,6 +1,4 @@
 ﻿#include <iostream>
-#include <exception>
-#include <new>
 using namespace std;
 
 struct Node {
@@ -24,7 +22,7 @@ void addNode(Node** head, int data) {
 	return;
 	
 }
-void circuled_list(Node** head) {
+void circular_list(Node** head) {
 	if (head == nullptr) {
 		cout << "Linked list is empty" << endl;
 		return;
@@ -74,7 +72,7 @@ int main() {
 	addNode(&head, 6);
 	addNode(&head, 7);
 	addNode(&head, 8);
-	circuled_list(&head);
+	circular_list(&head);
 	cout << endl << endl;
 	print_list(head);
 	delete_node(&head, 8);
